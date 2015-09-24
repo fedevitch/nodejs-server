@@ -2,13 +2,13 @@ var express = require('express');
 var hbs = require('express-hbs');
 var app = express();
 var url = require('url');
+var urlParsed = url.parse(req.url, true);
+var mongojs = require('mongojs');
+var db = mongojs('localhost/transactions');
+var transactionsCollection = db.collection('transactions');
 
 app.post('/transaction', function(req, res) {
-  var urlParsed = url.parse(req.url, true);
-  if(urlParsed.query.account && urlParsed.query.descr && urlParsed.query.currency && urlParsed.query.amount){
-	var mongojs = require('mongojs');
-        var db = mongojs('localhost/transactions');
-        var transactionsCollection = db.collection('transactions');
+   if(urlParsed.query.account && urlParsed.query.descr && urlParsed.query.currency && urlParsed.query.amount){	
         transactionsCollection.insert({account: urlParsed.query.account, description: urlParsed.query.descr, currency: urlParsed.query.currency, amount:urlParsed.query.amount});
         res.writeHead(200, { 'Content-Type': 'text/html; charset=UTF-8' });
         console.log("Recorded to db transaction: account : " + urlParsed.query.account + ", description: " + urlParsed.query.descr + ",currency: " + urlParsed.query.currency + ", amount: "+urlParsed.query.amount);
@@ -17,10 +17,6 @@ app.post('/transaction', function(req, res) {
 });
 
 app.get('/transactions', function(req, res) {
-    var urlParsed = url.parse(req.url, true);
-    var mongojs = require('mongojs');
-    var db = mongojs('localhost/transactions');
-    var transactionsCollection = db.collection('transactions');
     res.writeHead(200, { 'Content-Type': 'text/html; charset=UTF-8' });
     transactionsCollection.find(function (err, transactions) {
         // docs is an array of all the documents in collection

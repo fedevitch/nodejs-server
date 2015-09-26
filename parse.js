@@ -57,9 +57,15 @@ var transactions;
       var html = '';
       var isCorrect = true;
       var formatError = '';
-      for(var row in data) {
+      for(var row in data) {          
+          for(var i in data[row]){              
+              if(typeof data[row][i] === "undefined"){
+                  data[row][i] = "empty value";                  
+              }
+          }
+        var currentRow = parseInt(row)+parseInt(1);
         html += '<tr>\r\n';
-        html += '<td>'+data[row][0]+'</td>\r\n';
+        html += '<td>'+currentRow+'</td><td>'+data[row][0]+'</td>\r\n';
         html += '<td>'+data[row][1]+'</td>\r\n';
         var currencyIndex = CurrencyCodes.indexOf(data[row][2].valueOf());        
         if((data[row][2].valueOf().length == 3)&&(currencyIndex >= 0)){
@@ -67,7 +73,7 @@ var transactions;
             console.log(data[row][2],currencyIndex);
         }else{            
             isCorrect = false;            
-            formatError += 'Currency data in row: '+row+' is incorrect;\n';
+            formatError += '</p>Currency data in row '+currentRow+' is incorrect;\n</p>';
             html += '<td><font color="red">'+data[row][2]+'</font></td>\r\n';
             console.log(typeof(data[row][2]),data[row][2],currencyIndex,data[row][2].valueOf().length);
             
@@ -76,7 +82,7 @@ var transactions;
             html += '<td>'+data[row][3]+'</td>\r\n';//amount
         }   else{
             isCorrect = false;
-            formatError += 'Amount data in row: '+row+' is incorrect;\n';
+            formatError += '<p>Amount data in row '+currentRow+' is incorrect;</p>\n';
             html += '<td><font color="red">'+data[row][3]+'</font></td>\r\n';
         }
         if(data[row][4]){

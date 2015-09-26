@@ -61,17 +61,15 @@ var transactions;
         html += '<tr>\r\n';
         html += '<td>'+data[row][0]+'</td>\r\n';
         html += '<td>'+data[row][1]+'</td>\r\n';
-        
-        var currency = data[row][2];
-        currencyIndex = indexof(currency);
-        if(currencyIndex >= 0){
+        var currencyIndex = CurrencyCodes.indexOf(data[row][2].valueOf());        
+        if((data[row][2].valueOf().length == 3)&&(currencyIndex >= 0)){
             html += '<td>'+data[row][2]+'</td>\r\n';//currency
-            //console.log(currency,currencyIndex,CurrencyInfo[currencyIndex]);
+            console.log(data[row][2],currencyIndex);
         }else{            
-            isCorrect = false;
+            isCorrect = false;            
             formatError += 'Currency data in row: '+row+' is incorrect;\n';
             html += '<td><font color="red">'+data[row][2]+'</font></td>\r\n';
-            //console.log(currency,currencyIndex);
+            console.log(typeof(data[row][2]),data[row][2],currencyIndex,data[row][2].valueOf().length);
             
         }
         if(isNumeric(data[row][3])){
@@ -116,16 +114,13 @@ function sendTransactions(transactions){
     }
 }
 
-function indexof(element){
-    var index = 0;
-    for (var currency in CurrencyInfo){
-        //console.log(CurrencyInfo[currency].toString());
-        //(typeof(CurrencyInfo[currency]) === typeof(element))&&
-        if (element.toString() === CurrencyInfo[currency].toString()){
-            index = currency;
+function currencyCheck(charCode){
+    for (var currentCode in CurrencyCodes){
+        if(charCode.valueOf() === CurrencyCodes[currentCode].valueOf()){
+            return currentCode;
         }
     }
-    return index;
+    return -1;
 }
 
 function isNumeric(n) {

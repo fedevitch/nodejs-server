@@ -62,6 +62,6 @@ app.get('/transactions', function(req, res) {
     })
 });
 
-var server = app.listen(64530, function () {
+var server = app.listen(64503, function () {
     console.log('server started');
 });

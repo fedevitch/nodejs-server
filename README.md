@@ -101,111 +101,117 @@ Click on element having id "singup-button"
 
 ### 	**#Settings commands list**
 
-#### **Wait**
+### 	**Wait**
 
-##### usage
-
+##### 		usage
+```
 Wait <condition> for <number> [ms | s | min]
-
-##### example
-
-	Wait between operations for 0.5 s
-
+```
+#####  		example
+```
+Wait between operations for 0.5 s
+```
 ### **#Given commands list**
 
 #### **is**
 
-##### usage
-
+##### 	usage
+```
 <var> is <value>
-
+```
 ##### example
-
-	a is 1
-
+```
+a is 1
 b is 1.02
-
 s is "abcdefg"
-
 email is "[root@mail.com](mailto:root@mail.com)"
-
+```
 ### **#Test commands list**
 
 #### **Click on**
 
 ##### usage
-
+```
 Click on <element>
-
+```
 ##### example
-
-	Click on "Sign Up" button
-
+```
+Click on "Sign Up" button
+```
 #### **Double click on**
 
 ##### usage
-
+```
 Double click on <element>
-
+```
 ##### example
-
-	Double click on "About" link
-
+```
+Double click on "About" link
+```
 #### **Fill with**
 
 ##### usage
-
+```
 Fill <element> with <value>
-
+```
 ##### example
-
-	Fill placeholder "Username" with “John”
-
-	Fill input having id "email" with email
-
+```
+Fill placeholder "Username" with “John”
+Fill input having id "email" with email
+```
 #### **should be**
 
 ##### usage
-
+```
 <value> should be <value>
-
+```
 ##### example
-
-	a should be 5
-
-	b should be 1.2
-
-	Title should be "Splat"
+```
+a should be 5
+b should be 1.2
+Title should be "Splat"
+```
 
 #### **Wait for**
 
 ##### usage
 
+```
 Wait for <number> [ ms | s | min ]
+```
 
 ##### example
 
-	Wait for 1
+```
+Wait for 1
+```
 
 #### **Move mouse to**
 
 ##### usage
 
+```
 Move mouse to <element>
+```
 
 ##### example
 
-	Move mouse to link having id "menu-option-about"
-
-	**Focus on**
+```
+Move mouse to link having id "menu-option-about"
+**Focus on**
+```
 
 ##### usage
 
+```
 Focus on <element>
+```
 
 ##### example
 
-	Focus on input having id "username-field"
+```
+Focus on input having id "username-field"
+```
 
 ### **General commands list**
 

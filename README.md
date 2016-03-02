@@ -203,6 +203,21 @@ Focus on <element>
 Focus on input having id "username-field"
 ```
 
+#### **Submit**
+
+
+##### usage
+
+```
+Submit <element> 
+```
+
+##### example
+
+```
+Submit form having id “user-login”
+```
+
 ### **General commands list**
 
 #### **Element selectors**

@@ -2,11 +2,11 @@
 
 ## **Structure:**
 
-Structure of test definition is divided into blocks. [Blocks](#heading=h.ta8dfme4yoob) **starts with #**.
+Structure of test definition is divided into blocks. [Blocks](#blocks) **starts with #**.
 
-Blocks **[#Settings](#heading=h.gdavooh39jdi)** and **[#Given](#heading=h.5j4fbmvqp5g)** are optional.
+Blocks **[#Settings](#settings)** and **[#Given](#given)** are optional.
 
-If **[#Test](#heading=h.at8gtq7j57j3)** block is not explicitly defined the whole input text would be processed as **[#Test](#heading=h.at8gtq7j57j3)** block.
+If **[#Test](#test)** block is not explicitly defined the whole input text would be processed as **[#Test](#test)** block.
 
 Smallest building block of test definition is **command**.
 
@@ -18,11 +18,11 @@ All commands have to come under strict rules defined by command template.
 
 ### **#Settings**
 
-*is used to define some general behavior for whole test*
+*[is](#is) used to define some general behavior for whole test*
 
-##### [commands list](#heading=h.u8kry6sd3afe)
+##### commands list
 
-* [Wait](#heading=h.7k36js21gq2g)
+* [Wait](#wait)
 
 
 
@@ -35,9 +35,9 @@ Wait between operations for 0.5 s
 
 *is used for defining variables*
 
-##### [commands list](#heading=h.quq37h8z84ja)
+##### commands list
 
-* [is](#heading=h.qfwcw4pam045)
+* [is](#is)
 
 ##### example
 ```
@@ -59,7 +59,7 @@ Instructions have to be defined as list of steps written in the same order they 
 
 
 
-##### [commands list](#heading=h.82d1ktcis78t)
+##### commands list
 
 * [Click on](#click-on)
 

@@ -61,7 +61,7 @@ Instructions have to be defined as list of steps written in the same order they 
 
 ##### [commands list](#heading=h.82d1ktcis78t)
 
-* [Click on](#Click on)
+* [Click on](#click-on)
 
 * [Double click on](#heading=h.deqc9qg8kais)
 

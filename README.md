@@ -198,8 +198,10 @@ Move mouse to <element>
 
 ```
 Move mouse to link having id "menu-option-about"
-**Focus on**
 ```
+
+**Focus on**
+
 
 ##### usage
 

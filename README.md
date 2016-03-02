@@ -63,19 +63,19 @@ Instructions have to be defined as list of steps written in the same order they 
 
 * [Click on](#click-on)
 
-* [Double click on](#heading=h.deqc9qg8kais)
+* [Double click on](#double-click-on)
 
-* [Fill with](#heading=h.cr5x8fwwykiu)
+* [Fill with](#fill-with)
 
-* [should be](#heading=h.zdh5qadnep3a)
+* [should be](#should-be)
 
-* [Wait for](#heading=h.23ihasia5q2y)
+* [Wait for](#wait-for)
 
-* [Move mouse to](#heading=Movemouseto)
+* [Move mouse to](#move-mouse-to)
 
-* [Focus on](#heading=Focuson)
+* [Focus on](#focus-on)
 
-* [Submit](#heading=Submit)
+* [Submit](#submit)
 
 	example
 ```

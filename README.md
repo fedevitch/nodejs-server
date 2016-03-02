@@ -42,13 +42,9 @@ Wait between operations for 0.5 s
 ##### example
 ```
 #Given
-
 a is 1
-
 b is 1.02
-
 s is "abcdefg"
-
 email is "[root@mail.com](mailto:root@mail.com)"
 ```
 ### **#Test**
@@ -80,21 +76,13 @@ Instructions have to be defined as list of steps written in the same order they 
 	example
 ```
 #Test
-
 Title should be "Splat"
-
 Click on "Sign Up" button
-
 Fill placeholder "Username" with username
-
 Fill input having id "email" with email
-
 Fill placeholder "Password" with password
-
 Fill placeholder "Enter Password Again" with password
-
 Wait for 1 min
-
 Click on element having id "singup-button"
 ```
 ## **Commands:**
@@ -243,7 +231,6 @@ Wait between operations for 0.5 s
 username is "root"
 email is "[root@mail.com](mailto:root@mail.com)"
 password is "Testroot1"
-
 #Test
 Title should be "Splat"
 Click on "Sign Up" button

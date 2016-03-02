@@ -61,7 +61,7 @@ Instructions have to be defined as list of steps written in the same order they 
 
 ##### [commands list](#heading=h.82d1ktcis78t)
 
-* [Click on](#heading=h.us77652zmkp3)
+* [Click on](#Click on)
 
 * [Double click on](#heading=h.deqc9qg8kais)
 
@@ -217,18 +217,21 @@ Focus on input having id "username-field"
 
 #### **Element selectors**
 
-**	having id**
+**having id**
 
 usage
 
+```
 [<tag>|element] having id <value>
+```
 
 ##### example
 
-	element having id "add-button"
+```
+element having id "add-button"
+input having id "username-field"
+```
 
-	input having id "username-field"
-	
 # **Example of test written in human language**
 ```
 #Settings

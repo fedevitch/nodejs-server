@@ -40,8 +40,8 @@ Wait between operations for 0.5 s
 * [is](#heading=h.qfwcw4pam045)
 
 ##### example
-
-	#Given
+```
+#Given
 
 a is 1
 
@@ -50,7 +50,7 @@ b is 1.02
 s is "abcdefg"
 
 email is "[root@mail.com](mailto:root@mail.com)"
-
+```
 ### **#Test**
 
 *defines step instructions to be run as test*
@@ -71,15 +71,15 @@ Instructions have to be defined as list of steps written in the same order they 
 
 * [Wait for](#heading=h.23ihasia5q2y)
 
-* Move mouse to
+* [Move mouse to](#heading=Movemouseto)
 
-* Focus on
+* [Focus on](#heading=Focuson)
 
-* Submit
+* [Submit](#heading=Submit)
 
 	example
-
-	#Test
+```
+#Test
 
 Title should be "Splat"
 
@@ -96,7 +96,7 @@ Fill placeholder "Enter Password Again" with password
 Wait for 1 min
 
 Click on element having id "singup-button"
-
+```
 ## **Commands:**
 
 ### 	**#Settings commands list**

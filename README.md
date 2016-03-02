@@ -118,6 +118,8 @@ email is "[root@mail.com](mailto:root@mail.com)"
 
 #### **Click on**
 
+*simulates click event on given* \<element\>
+
 ##### usage
 ```
 Click on <element>
@@ -127,6 +129,8 @@ Click on <element>
 Click on "Sign Up" button
 ```
 #### **Double click on**
+
+*simulates double click event on given* \<element\>
 
 ##### usage
 ```
@@ -138,6 +142,8 @@ Double click on "About" link
 ```
 #### **Fill with**
 
+*sets value of input field to given* \<value\>
+
 ##### usage
 ```
 Fill <element> with <value>
@@ -148,6 +154,8 @@ Fill placeholder "Username" with “John”
 Fill input having id "email" with email
 ```
 #### **should be**
+
+*asserts that two values are equal*
 
 ##### usage
 ```
@@ -161,6 +169,8 @@ Title should be "Splat"
 ```
 
 #### **Wait for**
+
+*pause for given* \<number\> *of milliseconds / second / minutes*
 
 ##### usage
 
@@ -190,7 +200,7 @@ Move mouse to link having id "menu-option-about"
 
 #### **Focus on**
 
-
+*sets focus on* \<element\> 
 ##### usage
 
 ```
@@ -205,7 +215,7 @@ Focus on input having id "username-field"
 
 #### **Submit**
 
-
+*submits given* \<element\>
 ##### usage
 
 ```
@@ -218,13 +228,26 @@ Submit <element>
 Submit form having id “user-login”
 ```
 
+#### **Press key**
+*simulates key press event*
+##### usage
+```
+Press key <key> 
+```
+##### example
+```
+Press key “Ctrl”
+Press key “A”
+```
+
+
 ### **General commands list**
 
 #### **Element selectors**
 
 **having id**
 
-usage
+**usage**
 
 ```
 [<tag>|element] having id <value>
@@ -241,7 +264,6 @@ input having id "username-field"
 ```
 #Settings
 Wait between operations for 0.5 s
-
 #Given
 username is "root"
 email is "[root@mail.com](mailto:root@mail.com)"

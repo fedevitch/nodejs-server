@@ -73,7 +73,7 @@ Instructions have to be defined as list of steps written in the same order they 
 
 * [Submit](#submit)
 
-	example
+example
 ```
 #Test
 Title should be "Splat"

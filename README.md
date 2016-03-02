@@ -18,7 +18,7 @@ All commands have to come under strict rules defined by command template.
 
 ### **#Settings**
 
-*[is](#is) used to define some general behavior for whole test*
+*is used to define some general behavior for whole test*
 
 ##### commands list
 

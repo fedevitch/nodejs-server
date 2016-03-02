@@ -1,17 +1,20 @@
 # nodejs-server
 simple scripts for nodejs server
 
-Example of test written in human language
+#Example of test written in human language
 
-#Settings
+\#Settings
+
 Wait between operations for 0.5 s
 
-#Given
+\#Given
+
 username is “root”
 email is “root@mail.com”
 password is “Testroot1”
 
-#Test
+\#Test
+
 Title should be "Splat"
 Click on "Sign Up" button
 Fill placeholder “Username” with username
@@ -19,25 +22,24 @@ Fill input having id “email” with email
 Fill placeholder “Password” with password
 Fill placeholder “Enter Password Again” with password
 Wait for 1 min
-Click on element having id “singup-button”
+Click on element having id “signup-button”
 
 
+#Syntax system definition
+##Structure:
+  Structure of test definition is divided into blocks. **Blocks starts with #**.
 
-
+  Blocks **#Settings** and **#Given** are optional. 
+  If **#Test** block is not explicitly defined the whole input text would be processed as **#Test** block.
 
-Syntax system definition
-Structure:
-Structure of test definition is divided into blocks. Blocks starts with #.
+  Smallest building block of test definition is **command**.
+  
+  Commands are defined as **one line** of text written in human language.
+  
+  All commands have to come under strict rules defined by command template.
 
-Blocks #Settings and #Given are optional. 
-If #Test block is not explicitly defined the whole input text would be processed as #Test block.
-
-Smallest building block of test definition is command. 
-Commands are defined as one line of text written in human language. 
-All commands have to come under strict rules defined by command template.
-
-Blocks:
-#Settings
+##Blocks:
+###Settings
 is used to define some general behavior for whole test
 commands list
 Wait
@@ -47,7 +49,7 @@ example
 Wait between operations for 0.5 s
 
 
-#Given
+###Given
 is used for defining variables
 commands list
 is
@@ -58,7 +60,7 @@ b is 1.02
 s is “abcdefg”
 email is “root@mail.com”
 
-#Test
+###Test
 defines step instructions to be run as test
 
 Instructions have to be defined as list of steps written in the same order they have to be executed.
@@ -93,7 +95,7 @@ Wait <condition> for <number> [ms | s | min]
 example
 	Wait between operations for 0.5 s
 
-#Given commands list
+##Given commands list
 is
 usage 
 <var> is <value>
@@ -103,7 +105,7 @@ b is 1.02
 s is “abcdefg”
 email is “root@mail.com”
 
-#Test commands list
+##Test commands list
 Click on
 usage 
 Click on <element>

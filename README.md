@@ -91,7 +91,7 @@ Fill input having id "email" with email
 Fill placeholder "Password" with password
 Fill placeholder "Enter Password Again" with password
 Wait for 1 min
-Click on element having id "singup-button"
+Click on element having id "signup-button"
 ```
 ## **Commands:**
 

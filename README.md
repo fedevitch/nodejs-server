@@ -248,8 +248,8 @@ Press key “Ctrl”
 Press key “A”
 ```
 
-### **RadioGroup select**
-*selects an option from radio-button group
+#### **RadioGroup select**
+*selects an option from radio-button group*
 ##### usage
 ```
 RadioGroup <name> select <value>
@@ -261,7 +261,7 @@ RadioGroup "switch" select "off"
 ```
 
 ### **Dropdown select**
-*selects value from dropdown list
+*selects value from dropdown list*
 ##### usage
 ```
 Dropdown <name> select <value>
@@ -273,7 +273,7 @@ Dropdown "fruits" select "lemon"
 ```
 
 ### **Property should be**
-*check if property of element has expected value
+*check if property of element has expected value*
 ##### usage
 ```
  <element> <property> Property should be <value>

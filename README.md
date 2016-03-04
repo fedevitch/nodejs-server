@@ -81,6 +81,10 @@ Instructions have to be defined as list of steps written in the same order they 
 
 * [Property should be](#property-should-be)
 
+* [Wait on response](#wait-on-response)
+
+* [Check regex](#check-regex)
+
 example
 ```
 #Test

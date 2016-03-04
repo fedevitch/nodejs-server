@@ -79,7 +79,7 @@ Instructions have to be defined as list of steps written in the same order they 
 
 * [Dropdown select](#dropdown-select)
 
-* [Property should be](#property-should-be) 
+* [Property should be](#property-should-be)
 
 example
 ```
@@ -208,7 +208,7 @@ Move mouse to link having id "menu-option-about"
 
 #### **Focus on**
 
-*sets focus on* \<element\> 
+*sets focus on* \<element\>
 ##### usage
 
 ```
@@ -227,7 +227,7 @@ Focus on input having id "username-field"
 ##### usage
 
 ```
-Submit <element> 
+Submit <element>
 ```
 
 ##### example
@@ -240,7 +240,7 @@ Submit form having id “user-login”
 *simulates key press event*
 ##### usage
 ```
-Press key <key> 
+Press key <key>
 ```
 ##### example
 ```
@@ -283,6 +283,29 @@ Dropdown "fruits" select "lemon"
 "button1" "value" Property should be "Click me!"
 "placeholder-image" "style" Property should be "width:220px;height:280px;"
 ```
+
+### **Wait on response**
+*waits a* \<number\> *of milliseconds / second / minutes while all ajax requests return response*
+##### usage
+```
+ Wait on response <number> [ ms | s | min ]
+```
+##### example
+```
+ Wait on response 500
+```
+
+### **Check regex**
+*Check if value in* \<element\> *matches given* \<regex\>
+##### usage
+```
+<element> Check regex <regex>
+```
+##### example
+```
+"textBox1" Check regex ":^[A-Z0-9+_.-]+@[A-Z0-9.-]+$"
+```
+
 
 
 
